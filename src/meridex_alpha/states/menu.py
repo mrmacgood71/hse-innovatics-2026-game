@@ -35,9 +35,7 @@ class MenuState(BaseState):
         title = title_font.render("MERIDEX Альфа", True, TEXT)
         prompt = body_font.render("Нажми Enter или Space, чтобы начать", True, TEXT)
         status = hint_font.render("Следующий экран: хаб миссий", True, WARN)
-        footer = hint_font.render("Одиночный 2D-прототип на pygame", True, ACCENT)
 
         surface.blit(title, title.get_rect(center=(width // 2, 250)))
         surface.blit(prompt, prompt.get_rect(center=(width // 2, 360)))
         surface.blit(status, status.get_rect(center=(width // 2, 420)))
-        surface.blit(footer, footer.get_rect(center=(width // 2, height - 90)))
